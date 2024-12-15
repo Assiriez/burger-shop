@@ -1,0 +1,908 @@
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/roboto-medium-webfont.woff2') format('woff2'),
+        url('fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+        url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+/** Styles */
+
+body {
+    font-family: 'robotoregular';
+    color: #fff;
+    background-color: #1C1C1C;
+    margin: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1160px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    margin: 0;
+}
+
+
+/** Header */
+
+header {
+    max-width: 1600px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header .container ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header-menu {
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.container .active {
+    opacity: 1;
+}
+
+
+/** Buttons */
+
+.btn {
+    font-family: 'robotomedium';
+    
+    text-transform: uppercase;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 165px;
+    height: 50px;
+    border-radius: 5px;
+
+    color: #fff;
+    background-color: #F6762C;
+    opacity: 1;
+}
+
+header .container a:hover {
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-small {
+    font-family: 'robotomedium', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+
+    color: #fff;
+    background-color: #F6762C;
+
+    margin-top: 10px;
+}
+
+
+/** Section 1 sec-welcome */
+
+.sec-welcome {
+    background-image: url(./images/bg-welcome.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Масштабирует изображение (с сохранением пропорций) до минимально возможного размера, чтобы заполнить контейнер  */
+    background-position: center; /* Фоновое изображение будет всегда по центру */
+    margin-top: -120px;
+    padding-top: 280px;
+}
+
+.uptext {
+    font-family: 'robotomedium';
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'robotomedium';
+    font-size: 58px;
+    line-height: 67px;
+    margin: 7px 0 37px;
+}
+
+.main-text {
+    font-size: 18px;
+    line-height: 21px;
+    opacity: 0.7;
+    margin-bottom: 42px;
+}
+
+.art-top {
+    width: 555px;
+    height: 360px;
+}
+
+.art-top {
+    padding-bottom: 242px;
+}
+
+
+
+
+/** Section 2 sec-set-line */
+
+.sec-set-line .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Для переноса карточек */
+    gap: 40px 10px;
+    padding: 100px 10px;
+}
+
+.sec-set-line .container article {
+    width: 264px;
+    text-align: center;
+    background: #312F30;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sec-set-line .container article img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sec-set-line--text {
+    padding: 30px 20px;
+}
+
+h4 {
+    font-family: 'robotomedium';
+    font-size: 20px;
+    
+    margin: 0 0 15px 0;
+}
+
+.sec-set-line .container article p {
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+
+
+/** Section 3 sec-king */
+
+.sec-king {
+    background-color: #312F30;
+}
+
+.sec-king .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 45px;
+    padding-right: 100px;
+}
+
+.sec-king img {
+    max-width: 500px;
+}
+
+.king {
+    max-width: 365px;
+}
+
+h2 {
+    font-family: 'robotomedium';
+    font-size: 44px;
+    margin: 0;
+}
+
+.king p {
+    line-height: 19px;
+    max-width: 370px;
+    opacity: 0.7;
+}
+
+.burger-text {
+    padding: 24px 0 14px 0;
+}
+
+.six-dollars {
+    font-family: 'robotomedium';
+    font-size: 20px;
+    letter-spacing: 0.1em;
+
+    margin: 0;
+    color: #F6762C;
+}
+
+.eight-dollars {
+    font-size: 16px;
+        /* identical to box height */
+    letter-spacing: 0.1em;
+    text-decoration-line: line-through;
+        
+    opacity: 0.5;
+}
+
+.container .btn {
+    margin-top: 10px;
+}
+
+
+
+/** Section 4 sec-set-list */
+
+.sec-set-list .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "dairy pizza"
+    "burger papa";
+    gap: 30px;
+    margin-top: 180px;
+    flex-wrap: wrap;
+}
+
+/** dairy */
+
+.sec-set-list .container div {
+    display: flex;
+    align-items: center;
+    
+    width: 555px;
+    height: 300px;
+
+    background-color: #312F30;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dairy {
+    background-image: url(./images/product-1.jpg);
+    justify-content: right;
+    
+}
+
+.sec-set-list .container article {
+    width: 264px;
+    height: 175px;
+    
+    margin-left: 50px;
+}
+
+.sec-set-list .container p {
+    font-family: 'robotoregular';
+    line-height: 19px;
+
+    opacity: 0.7;
+
+    margin-bottom: 10px;
+}
+
+.price-new {
+    font-family: 'robotomedium';
+    line-height: 19px;
+/* identical to box height */
+    letter-spacing: 0.1em;
+
+    color: #F6762C;
+}
+
+.price-old {
+    /* $6 */
+    font-family: 'robotomedium';
+    line-height: 19px;
+/* identical to box height */
+    letter-spacing: 0.1em;
+    text-decoration-line: line-through;
+
+    color: #F6762C;
+    opacity: 0.5;
+
+    margin-left: 10px;
+}
+
+.pizza {
+    background-image: url(./images/product-2.jpg);
+}
+
+.pizza article {
+    width: 250px;
+}
+
+.burger {
+    background-image: url(./images/product-3.jpg);
+    justify-content: right;
+}
+
+.papa {
+    background-image: url(./images/product-4.jpg);
+}
+
+
+/** Section 5 photo-people */
+
+.photo-people {
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+    */
+    background-color: #1C1C1C;
+}
+
+.photo-people .container {
+    max-width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faces {
+    max-width: 365px;
+    margin-top: 115px;
+    margin-bottom: 194px;
+}
+
+.wrapper-quote {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wrapper-quote::before {
+    content: url(./images/icons/quote.svg);
+    
+}
+
+.sub-decor {
+    max-width: 370px;
+}
+
+blockquote {
+    line-height: 19px;
+    opacity: 0.7;
+    margin: 30px 0;
+}
+
+cite {
+    /* display: block; */
+    font-family: 'robotomedium';
+    font-style: normal;
+    font-size: 24px;
+}
+
+.subauthor {
+    font-family: 'robotomedium';
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+
+
+/** Section 6 download-menu */
+
+.download-menu {
+    background-color: #312F30;
+}
+
+.download-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.download-menu p {
+    font-family: 'robotomedium';
+    font-size: 40px;
+
+    margin: 60px 0;
+}
+
+.download-menu .btn {
+    margin-top: 0;
+}
+
+
+/** Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-base {
+    max-width: 1160px;
+    /*height: 155px;*/
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 140px;
+    margin-top: 125px;
+    margin-bottom: 40px;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    gap: 130px;
+}
+
+.footer-title {
+    font-family: 'robotomedium';
+    margin-bottom: 15px;
+}
+
+.footer-nav-items {
+    margin-top: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    font-family: 'robotoregular';
+    font-size: 12px;
+    text-decoration: none;
+    
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-social ul {
+    display: flex;
+    padding: 0;
+}
+
+.footer-icon {
+    margin-left: 10px;
+}
+
+.footer-mail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-web {
+    display: flex;
+    align-items: center;
+}
+
+.footer-mail::before {
+    content: url(./images/icons/mail.svg);
+    margin-right: 10px;
+    height: 12px;
+    width: 12px;
+}
+
+.footer-web::before {
+    content: url(./images/icons/global.svg);
+    margin-right: 10px;
+    height: 12px;
+    width: 12px;
+}
+
+.one-figma {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.figma {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.figma:hover {
+	color: green;
+    opacity: 1;
+}
+
+
+/** Method desktop first */
+
+@media (max-width: 1170px) {
+    .footer-base {
+        gap: 100px;
+    }
+}
+
+
+@media (max-width: 1160px) {
+.sec-set-list .container {
+    gap: 10px;
+}
+}
+
+
+@media (max-width: 1150px) { /* max-width - то есть до этой ширины */
+.sec-set-list .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-template-rows: auto auto;*/
+    grid-template-areas: "dairy" "pizza" "burger" "papa";
+    justify-items: center;
+    gap: 30px;
+    margin-top: 160px;
+}
+
+.sec-set-list .container article {
+    margin-left: 20px;
+}
+}
+
+
+@media (max-width: 1140px) {
+.faces {
+    margin: 100px 0;
+}
+
+.footer-base {
+    margin-top: 80px;
+}
+}
+
+
+@media (max-width: 1100px) {
+.sec-set-list .container {
+    margin-top: 120px;
+}
+
+.footer-nav {
+    gap: 80px;
+}
+}
+
+
+@media (max-width: 1050px) {
+header {
+    position: relative;
+    z-index: 10;
+}
+
+.sec-welcome {
+        position: relative;
+    }
+
+.sec-welcome > * {
+        position: relative;
+        z-index: 10;
+    }
+
+.sec-welcome::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+@media (max-width: 1020px) {
+.footer-base {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "flists flists" "cont soci";
+    gap: 10px;
+}
+
+.contacts {
+    grid-area: cont;
+}
+
+.footer-social {
+    grid-area: soci;
+}
+
+.footer-lists {
+    grid-area: flists;
+}
+
+.footer-mail {
+    margin-bottom: 20px;
+}
+
+.footer-title-mob {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.footer-social ul {
+    justify-content: space-between;
+}
+}
+
+
+@media (max-width: 870px) {
+.sec-king .container {
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.king {
+    text-align: center;
+}
+
+.king .btn {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+}
+
+
+@media (max-width: 830px) {
+.art-top {
+    padding-bottom: 100px;
+}
+
+.sec-set-line .container {
+    justify-content: space-evenly;
+}
+}
+
+
+@media (max-width: 700px) {
+header .btn {
+    display: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.photo-people .container {
+    flex-direction: column;
+    }
+
+.faces {
+    margin: 50px;
+}
+
+.subauthor {
+    margin-bottom: 30px;
+}
+
+.download-menu p {
+    margin: 40px 0;
+}
+
+.footer-base {
+    margin: 40px 0;
+}
+}
+
+
+@media (max-width: 600px) {
+.art-top {
+    width: 100%;
+}
+
+.sec-set-list .container div {
+    width: 100%;
+    }
+
+.dark {
+    position: relative;
+}
+
+.dark > * {
+    position: relative;
+    z-index: 10;
+}
+
+.dark::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.download-menu p {
+    font-size: 34px;
+}
+}
+
+
+@media (max-width: 500px) {
+header .container {
+    flex-direction: column;
+}
+
+.sec-king img {
+    width: 100%;
+    }
+
+.sec-set-list .container {
+    margin-top: 60px;
+    }
+
+
+.download-menu .container {
+    flex-direction: column;
+}
+
+.download-menu p {
+    margin: 20px 0;
+}
+
+.download-menu .btn {
+    margin-bottom: 20px;
+}
+}
+
+
+@media (max-width: 450px) {
+    /* 4 section */
+.dark {
+    justify-content: center;
+    text-align: center;
+}
+
+.sec-set-list .container article {
+    margin: 0;
+}
+
+.sec-set-list article .btn-small {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-base {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "flists" "cont" "soci";
+    gap: 20px;
+}
+
+.contacts {
+    grid-area: cont;
+}
+
+.footer-social {
+    grid-area: soci;
+}
+
+.footer-lists {
+    grid-area: flists;
+}
+
+.footer-nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+}
+
+.footer-base .contacts img {
+    padding-left: 20px;
+}
+}
+
+
+@media (max-width: 400px) {
+header .container ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sec-welcome {
+    margin-top: -272px;
+}
+
+.uptext {
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-size: 14px;
+    opacity: 1;
+}
+
+.art-top {
+    padding-bottom: 15px;
+}
+
+.sec-welcome .container .art-top .btn {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.faces {
+    width: 100%;
+}
+}
+
+
+@media (max-width: 340px) {
+.download-menu p {
+    font-size: 30px;
+    }
+}
+
+
+@media (max-width: 320px) {
+cite {
+    font-size: 20px;
+}
+}
